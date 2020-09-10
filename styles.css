@@ -69,6 +69,7 @@ ul li {
     position: fixed;
 }
 
+/*
 .banner video {
     overflow: hidden;
     position: absolute;
@@ -88,7 +89,7 @@ ul li {
     opacity: 0.2;
     z-index: 10;
 }
-
+*/
 
 .banner .text-container {
 
