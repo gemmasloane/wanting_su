@@ -14,12 +14,17 @@ html {
 
 a {
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 
-a:link {text-decoration: none;color: #4A4A4A;}
-a:hover {text-decoration: underline; color: #4A4A4A;}
-a:visited {text-decoration: none;color: #4A4A4A;}
-a:active {text-decoration: none;color: #4A4A4A;}
+a:link {text-decoration: none;color: grey;}
+a:hover {text-decoration: underline; color: yellow;}
+a:visited {text-decoration: none;color: grey;}
+a:active {text-decoration: none;color: grey;}
+
+img {
+    overflow: hidden;
+}
 
 /* Header */
 
@@ -27,8 +32,64 @@ a:active {text-decoration: none;color: #4A4A4A;}
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    padding: 20px 3%;
+    background-color: black;
+    border-bottom: #4A4A4A 1px solid;
+}
+
+.site-motto {
+    color: grey;
+    position: relative;
+    display: block;
+}
+
+#logo {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+}
+
+#logo strong {
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 0.1rem;    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    padding: 20px 0px;
+    margin: 10px;
+}
+
+.decktop li a {
+    color: ivory;
+    
+}
+
+.mobile {
+    display: none;
+}
+
+/*
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -39,16 +100,27 @@ header {
 }
 
 #logo {
-    display: inline-flex;
-    float: center;
+    display: block;
+    text-align: center;
 }
 
+#logo strong {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
 /* Nevigation */
+
+/*
 .nevigation {
+    position: absolute;
+    float: right;
     
 }
 
 ul {
+    
     list-style-type: none;
 }
 
@@ -58,15 +130,39 @@ ul li {
 }
 
 
+
+.mobile {
+    display: none;
+}
+
+
 /* Main Content */
 
 /* Banner */ 
 .main {
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
 .banner {
     position: fixed;
+}
+
+.banner video {
+    z-index: 10;
+
+}
+
+.banner::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 20;
+    opacity: 0.3;
+
 }
 
 /*
@@ -92,18 +188,29 @@ ul li {
 */
 
 .banner .text-container {
-
+    display: block;
+    position: absolute;
+    z-index: 50;
+    top: 30%;
+    left: 25%;
 }
 
 .banner .text-container .text {
-    display: flex;
+    color: whitesmoke;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .banner .text-container .CTA-sign-up {
-    position: relative;
-    margin-top: 2rem;
+    position: absolute;
+    left: 45%;
+    margin-top: 0.5rem;
     background-color: black;
-    padding: 5px 2px;
+    color: whitesmoke;
+    padding: 5px 30px;
     border-radius: 5px;
+}
+
+.banner .text-container .CTA-sign-up a {
+    color: whitesmoke;
 }
