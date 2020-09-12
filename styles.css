@@ -48,6 +48,13 @@ header {
     position: relative;
     display: block;
 }
+.beyond {
+    display: inline;
+}
+.beyond .desktop li {
+    list-style-type: none;
+    font-style: italic;
+}
 
 #logo {
     display: inline-block;
@@ -207,10 +214,20 @@ ul li {
     margin-top: 0.5rem;
     background-color: black;
     color: whitesmoke;
-    padding: 5px 30px;
-    border-radius: 5px;
+    padding: 10px 50px;
+    border-radius: 10px;
 }
 
 .banner .text-container .CTA-sign-up a {
     color: whitesmoke;
+}
+
+.banner .reference {
+    display: block;
+    width: 98%;
+    text-align: end;
+    top: 80%;
+    position: absolute;
+    color: whitesmoke;
+    margin: 10px;
 }
