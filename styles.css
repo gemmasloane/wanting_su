@@ -16,11 +16,12 @@ a {
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
-
+ 
 a:link {text-decoration: none;color: grey;}
-a:hover {text-decoration: underline; color: yellow;}
-a:visited {text-decoration: none;color: grey;}
-a:active {text-decoration: none;color: grey;}
+a:hover {text-decoration: underline; color: rgb(0, 153, 255);}
+a:visited {text-decoration: none;}
+a:active {text-decoration: none;}
+
 
 img {
     overflow: hidden;
@@ -42,7 +43,7 @@ header {
     background-color: black;
     border-bottom: #4A4A4A 1px solid;
 }
-
+/*
 .site-motto {
     color: grey;
     position: relative;
@@ -55,15 +56,17 @@ header {
     list-style-type: none;
     font-style: italic;
 }
+*/
 
 #logo {
     display: inline-block;
+    float: left;
     text-align: center;
     width: 250px;
 }
 
 #logo strong {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: white;
     letter-spacing: 0.1rem;    
 }
@@ -83,7 +86,7 @@ ul li {
     margin: 10px;
 }
 
-.decktop li a {
+nav li a {
     color: ivory;
     
 }
@@ -143,7 +146,6 @@ ul li {
 }
 
 
-/* Main Content */
 
 /* Banner */ 
 .main {
@@ -156,7 +158,6 @@ ul li {
 
 .banner video {
     z-index: 10;
-
 }
 
 .banner::after {
@@ -197,7 +198,7 @@ ul li {
 .banner .text-container {
     display: block;
     position: absolute;
-    z-index: 50;
+    z-index: 30;
     top: 30%;
     left: 25%;
 }
@@ -230,4 +231,24 @@ ul li {
     position: absolute;
     color: whitesmoke;
     margin: 10px;
+}
+
+/* Main Content */
+.main-content {
+    position: relative;
+    top: 700px;
+    z-index: 50;
+    background-color: white;
+}
+
+.about .image-container img {
+    width: 40%;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    bottom: 0;
+    background-color: black;
 }
