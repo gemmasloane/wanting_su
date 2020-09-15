@@ -271,6 +271,12 @@ ul li {
     font-size: 4rem;
 }
 
+.about .text-container h5 {
+    padding-left: 10%;
+    padding-top: 1rem;
+
+}
+
 .about .content {
     display: flex;
     margin: 2rem 4rem;
