@@ -445,6 +445,10 @@ footer .contact .icon {
     padding-top: 1rem;
 }
 
+footer .contact .icon a:visited {
+    color: whitesmoke;
+}
+
 footer .contact .icon a:hover {
     text-decoration: underline; color: rgb(0, 153, 255);
 }
