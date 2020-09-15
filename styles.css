@@ -269,6 +269,7 @@ ul li {
     padding-left: 2rem;
     line-height: 4.5rem;
     font-size: 4rem;
+    color: wheat;
 }
 
 .about .text-container h5 {
@@ -356,7 +357,7 @@ ul li {
 
 .table .text-container h5 {
     padding-left: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
     font-weight: 100;
 }
 
