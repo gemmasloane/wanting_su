@@ -275,7 +275,6 @@ ul li {
 .about .text-container h5 {
     padding-left: 10%;
     padding-top: 1rem;
-
 }
 
 .about .content {
@@ -343,6 +342,10 @@ ul li {
     height: auto;
 }
 
+.table .image-container #meyes {
+    margin-top: 5rem;
+}
+
 .table .text-container {
     display: flex;
     justify-content: center;
@@ -359,6 +362,12 @@ ul li {
     padding-left: 1rem;
     font-family: sans-serif;
     font-weight: 100;
+}
+
+.table .text-container span {
+    color: wheat;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 
