@@ -23,6 +23,10 @@ a:hover {text-decoration: underline; color: rgb(0, 153, 255);}
 a:visited {text-decoration: none;}
 a:active {text-decoration: none;}
 
+i {
+    color: whitesmoke;
+    cursor: pointer;
+}
 
 img {
     overflow: hidden;
@@ -88,7 +92,7 @@ ul li {
 }
 
 nav li a {
-    color: #4A4A4A;
+    color: #727272;
     
 }
 
@@ -257,7 +261,7 @@ ul li {
 }
 
 .about .section {
-    color: #4A4A4A;
+    color: #656565;
     font-weight: 200;
 }
 
@@ -315,7 +319,7 @@ ul li {
 }
 
 .beyond-CV .section {
-    color: #4A4A4A;
+    color: #656565;
 }
 
 .beyond-CV .content-box {
@@ -370,6 +374,13 @@ ul li {
     font-size: 1.5rem;
 }
 
+.table .text-container a:hover {
+    text-decoration: underline; 
+    color: rgb(0, 153, 255)
+}
+.table .text-container a:visited {
+    color: whitesmoke;
+}
 
 /* Beyond Eye Level */
 
@@ -382,7 +393,7 @@ ul li {
 }
 
 .beyond-eye-level .section {
-    color: #4A4A4A;
+    color: #656565;
 }
 
 .beyond-eye-level .content-box {
@@ -406,8 +417,40 @@ footer {
     position: relative;
     top: 40rem;
     width: 100%;
-    bottom: 0;
     background-color: black;
-    padding-top: 2rem;
+    padding: 2rem;
     text-align: center;
+    border-top: #4A4A4A 1px solid;
 }
+
+footer .contact {
+    margin-left: 8rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    border-left: wheat 2px solid;
+    line-height: 1.5rem;
+}
+
+footer .contact h4 {
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+footer .contact h5,
+footer .contact .icon {
+    padding-top: 1rem;
+}
+
+footer .contact .icon a:hover {
+    text-decoration: underline; color: rgb(0, 153, 255);
+}
+
+footer #footer {
+    position: relative;
+    top: 4rem;
+    padding-bottom: 1rem;
+} 
