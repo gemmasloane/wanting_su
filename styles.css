@@ -88,7 +88,7 @@ ul li {
 }
 
 nav li a {
-    color: ivory;
+    color: #4A4A4A;
     
 }
 
@@ -253,12 +253,22 @@ ul li {
 
 .about {
     display: block;
-    margin: 6rem 12rem; 
-    
+    margin: 6rem 12rem;  
 }
 
 .about .section {
+    color: #4A4A4A;
+    font-weight: 200;
+}
 
+.about .text-container h4 {
+    font-size: 2.5rem;
+}
+
+.about .text-container h2 {
+    padding-left: 2rem;
+    line-height: 4.5rem;
+    font-size: 4rem;
 }
 
 .about .content {
@@ -282,7 +292,7 @@ ul li {
 
 .content .image-container img {
     position: absolute;
-    left: 45%;
+    left: 50%;
     width: 33%;
     z-index: 20;
 }
@@ -293,8 +303,9 @@ ul li {
 .beyond-CV {
     position: relative;
     margin: 6rem 12rem;
-    top: 30rem;
-    border-top: whitesmoke 2px solid;
+    top: 35rem;
+    border-top: #4A4A4A 1px solid;
+    padding-top: 1rem;
 }
 .table {
     display: grid;
