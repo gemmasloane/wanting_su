@@ -10,6 +10,7 @@ html {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: #4A4A4A;
+    background-color: black;
 }
 
 a {
@@ -153,7 +154,7 @@ ul li {
 }
 
 .banner {
-    position: fixed;
+    position: relative;
 }
 
 .banner video {
@@ -196,11 +197,17 @@ ul li {
 */
 
 .banner .text-container {
-    display: block;
+    display: flex;
     position: absolute;
     z-index: 30;
-    top: 30%;
-    left: 25%;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .banner .text-container .text {
@@ -210,8 +217,7 @@ ul li {
 }
 
 .banner .text-container .CTA-sign-up {
-    position: absolute;
-    left: 45%;
+    position: relative;
     margin-top: 0.5rem;
     background-color: black;
     color: whitesmoke;
@@ -227,28 +233,87 @@ ul li {
     display: block;
     width: 98%;
     text-align: end;
-    top: 80%;
     position: absolute;
-    color: whitesmoke;
+    top: 90%;
+    z-index: 30;
+    color: rgba(255, 255, 255, 0.767);
     margin: 10px;
 }
 
 /* Main Content */
+
 .main-content {
     position: relative;
-    top: 700px;
-    z-index: 50;
-    background-color: white;
+    color: whitesmoke;
+    background-color: black;
 }
 
-.about .image-container img {
-    width: 40%;
+
+/* About */
+
+.about {
+    display: block;
+    margin: 6rem 12rem; 
+    
 }
+
+.about .section {
+
+}
+
+.about .content {
+    display: flex;
+    margin: 2rem 4rem;
+    padding-top: 2rem;
+}   
+
+.content .text-container {
+    position: absolute;
+    left: 20%;
+    z-index: 30;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+.content .text-container h2 {
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+.content .image-container img {
+    position: absolute;
+    left: 45%;
+    width: 33%;
+    z-index: 20;
+}
+
+
+/* Beyond CV */
+
+.beyond-CV {
+    position: relative;
+    margin: 6rem 12rem;
+    top: 30rem;
+    border-top: whitesmoke 2px solid;
+}
+.table {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Beyond Eye Level */
+.beyond-eye-level .image-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: ;
+    height: ;
+}
+
 
 footer {
-    position: fixed;
+    position: relative;
     width: 100%;
-    z-index: 50;
+    z-index: ;
     bottom: 0;
     background-color: black;
 }
