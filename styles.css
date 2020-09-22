@@ -382,6 +382,18 @@ ul li {
     color: whitesmoke;
 }
 
+.text-container h5 #bright {
+    color: yellow;
+    font-size: 1rem;
+}
+h5 #blue {
+    color: rgb(83, 115, 255);
+}
+h5 #white {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
 /* Beyond Eye Level */
 
 .beyond-eye-level { 
