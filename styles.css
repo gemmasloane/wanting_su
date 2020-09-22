@@ -382,14 +382,17 @@ ul li {
     color: whitesmoke;
 }
 
-.text-container h5 #bright {
-    color: yellow;
-    font-size: 1rem;
+.text-container #color span {
+    color: wheat;
+    font-size: 1.2rem;
 }
-h5 #blue {
-    color: rgb(83, 115, 255);
+#color #blue {
+    color: white;
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.5rem;
 }
-h5 #white {
+#color #white {
     color: whitesmoke;
     font-size: 1rem;
 }
