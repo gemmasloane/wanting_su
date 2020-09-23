@@ -421,9 +421,15 @@ ul li {
     height: ;
 }
 
+.beyond-eye-level .content-box .flex {
+    margin: 2%;
+}
+
 .beyond-eye-level .image-container img {
-    height: 280px;
+    height: 128px;
     width: auto;
+    object-fit: cover;
+    object-position: center center;
 }
 
 /* Footer */
