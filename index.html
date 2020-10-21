@@ -12,166 +12,356 @@
     </script>
 
     <meta charset="UTF-8">
+	<base href="https://takeyoubeyond.net/" target="_blank">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Wanting Su</title>
-
-        <style>
-            .beyond-eye-level .content-box {
-                grid-template-columns: auto auto auto !important;
-            }
-            .beyond-eye-level {
-                position: relative;
-                margin: 6rem 12rem !important;
-                top: 40rem;
-                border-top: #4A4A4A 1px solid;
-                padding-top: 2rem;
-            }
-            @media only screen and (max-width: 1024px) {
-                .about .text-container h2 {
-                    padding-left: 0rem;
-                    line-height: 4rem;
-                    font-size: 43px;
-                    color: wheat;
-                }
-                .beyond-eye-level {
-                    margin: 0 !important;
-                    text-align: center;
-                }
-                .about {
-                    margin: 0 !important;
-                    margin-top: 30px !important;
-                    text-align: center;
-                }
-                .content .text-container {
-                    position: absolute;
-                    left: 9% !important;
-                }
-                .content .image-container img {
-                    left: 47% !important;
-                    top: 5% !important;
-                    width: 39% !important;
-                }
-                .beyond-CV {
-                    margin: 6rem 5rem !important;
-                }
-                .beyond-CV .content-box {
-                    padding-top: 4rem !important;
-                    margin: 2rem 3rem !important;
-                    margin-top: 0;
-                }
-                .table .image-container img {
-                    width: 180px !important;
-                    height: auto;
-                }
-                .table .image-container {
-                    align-self: center;
-                }
-                .table .image-container #meyes {
-                    margin-top: 0 !important
-                }
-                .table .text-container {
-                    margin-left: 23px;
-                }
-                .beyond-eye-level .content-box {
-                    grid-template-columns: auto auto !important;
-                    margin: 2rem 8rem !important;
-                }
-            }
-            @media only screen and (max-width: 600px) {
-                .about .content {
-                    margin: 0 !important
-                }
-                #logo strong {
-                    font-size: 14px !important;
-                }
-                #logo {
-                    width: 131px;
-                }
-                .navigation nav ul li a {
-                    font-size: 9px !important;
-                    padding: 0;
-                    margin: 0;
-                }
-                ul li {
-                    margin: 5px !important;
-                }
-                header {
-                    padding: 14px 10px !important;
-                }
-                .banner .text-container .text {
-                    font-size: 12px !important;
-                }
-                .banner .reference {
-                    margin: 0px !important;
-                    top: 88%;
-                }
-                .content .image-container img {
-                    left: 8% !important;
-                    width: 80% !important;
-                    top: 1% !important;
-                }
-                .about {
-                    margin: 0 !important;
-                    margin-top: 30px !important;
-                    text-align: center;
-                }
-                .about .text-container h4 {
-                    font-size: 1.5rem !important;
-                }
-                .content .text-container h2 {
-                    margin: 0rem !important;
-                }
-                .about .text-container h2 {
-                    padding-left: 0rem !important;
-                    line-height: 2.5rem !important;
-                    font-size: 2rem !important;
-                }
-                .about .text-container h5 {
-                    padding-left: 0% !important;
-                    font-size: 32px !important;
-                }
-                .content .text-container {
-                    top: 9% !important;
-                    left: 0% !important;
-                }
-                .beyond-CV {
-                    margin: 0 !important;
-                    margin-top: 280px !important;
-                }
-                .beyond-CV .section {
-                    margin-left: 20px !important;
-                }
-                .table .image-container #meyes {
-                    margin-top: 0 !important;
-                }
-                .table {
-                    grid-template-columns: auto !important;
-                }
-                .table .text-container {
-                    margin: 10px 50px;
-                    display: block;
-                }
-                .table .image-container img {
-                    width: 280px !important;
-                }
-                .beyond-CV .content-box {
-                    margin: 0 !important;
-                }
-                .beyond-eye-level {
-                    margin: 0 !important;
-                    text-align: center;
-                }
-                .beyond-eye-level .content-box {
-                    grid-template-columns: auto !important;
-                    margin: 1rem 3rem 3rem 3rem !important;
-                }
-                footer .contact {
-                    margin-left: 5px !important;
-                }
-            }
-        </style>
+	
+	
+	<style>
+	.table .text-container a:hover {
+		text-decoration: underline;
+		color: rgb(0, 153, 255);
+		-webkit-text-fill-color: rgb(0, 153, 255);
+	}
+	.content .image-container img {
+		left: 47% !important;
+		top: 5% !important;
+		width: 444px !important;
+	}
+	.beyond-eye-level .content-box {
+		-ms-grid-template-columns: auto auto auto !important;
+		grid-template-columns: auto auto auto !important;
+	}
+	.beyond-eye-level {
+		position: relative;
+		margin: 6rem 12rem !important;
+		top: 40rem;
+		border-top: #4A4A4A 1px solid;
+		padding-top: 2rem;
+	}
+	@media only screen and (min-width: 1024px) {
+		.banner .text-container {
+			height: 77%;
+		}
+	}
+	.flex img {
+		transition: 0.4s;
+		cursor: pointer;
+	}
+	.flex img:hover {
+		transform: scale(0.95);
+		/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
+	@media only screen and (max-width: 1024px) {
+		.about .text-container h2 {
+			padding-left: 0rem;
+			line-height: 4rem;
+			font-size: 43px;
+			color: wheat;
+		}
+		.beyond-eye-level {
+			margin: 0 !important;
+			text-align: center;
+		}
+		.about {
+			margin: 0 !important;
+			margin-top: 30px !important;
+			text-align: center;
+		}
+		.content .text-container {
+			position: absolute;
+			left: 9% !important;
+		}
+		.content .image-container img {
+			left: 47% !important;
+			top: 5% !important;
+			width: 39% !important;
+		}
+		.beyond-CV {
+			margin: 6rem 5rem !important;
+		}
+		.beyond-CV .content-box {
+			padding-top: 4rem !important;
+			margin: 2rem 3rem !important;
+			margin-top: 0;
+		}
+		.table .image-container img {
+			width: 180px !important;
+			height: auto;
+		}
+		.table .image-container {
+			align-self: center;
+		}
+		.table .image-container #meyes {
+			margin-top: 0 !important
+		}
+		.table .text-container {
+			margin-left: 23px;
+		}
+		.beyond-eye-level .content-box {
+			-ms-grid-template-columns: auto auto !important;
+			grid-template-columns: auto auto !important;
+			margin: 2rem 8rem !important;
+		}
+	}
+	.menu_btn {
+		border: 1px solid #fff;
+		background: transparent;
+		padding: 6px 10px;
+		display: none;
+	}
+	@media only screen and (max-width: 600px) {
+		.content .image-container img {
+			left: 8% !important;
+			width: 80% !important;
+			top: 3px !important;
+			margin-top: 388px;
+		}
+		.about .content {
+			position: relative;
+		}
+		.toggel {
+			display: none
+		}
+		.active {
+			display: block !important
+		}
+		ul li {
+			display: inherit;
+			padding: 3px 0px;
+		}
+		.desktop {
+			position: absolute;
+			top: 66px;
+			left: 0;
+			background: #000;
+			width: 100%;
+			padding: 0 22px;
+		}
+		.menu_btn {
+			display: block;
+			float: right;
+			margin: 10px 10px 0 0;
+		}
+		.bg_video {
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		#banner {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		.main-content {
+			margin-top: 100vh;
+		}
+		.about .content {
+			margin: 0 !important
+		}
+		#logo strong {
+			font-size: 14px !important;
+		}
+		#logo {
+			width: 131px;
+		}
+		.navigation nav ul li a {
+			font-size: 9px !important;
+			padding: 0;
+			margin: 0;
+		}
+		ul li {
+			margin: 5px !important;
+		}
+		header {
+			padding: 14px 10px !important;
+		}
+		.banner .text-container .text {
+			font-size: 12px !important;
+		}
+		.banner .reference {
+			margin: 0px !important;
+			top: 88%;
+		}
+		.content .image-container img {
+			left: 8% !important;
+			width: 80% !important;
+			top: 1% !important;
+		}
+		.about {
+			margin: 0 !important;
+			margin-top: 30px !important;
+			margin-left: 30px !important;
+			text-align: left;
+		}
+		.about .text-container h4 {
+			font-size: 1.5rem !important;
+		}
+		.content .text-container h2 {
+			margin: 0rem !important;
+		}
+		.about .text-container h2 {
+			padding-left: 0rem !important;
+			line-height: 2.5rem !important;
+			font-size: 2rem !important;
+		}
+		.about .text-container h5 {
+			padding-left: 0% !important;
+			font-size: 32px !important;
+		}
+		.content .text-container {
+			top: 9% !important;
+			left: 0% !important;
+		}
+		.beyond-CV {
+			margin: 0 !important;
+			margin-top: 42% !important;
+		}
+		.beyond-CV .section {
+			margin-left: 20px !important;
+		}
+		.table .image-container #meyes {
+			margin-top: 0 !important;
+		}
+		.table {
+			-ms-grid-template-columns: auto !important;
+			grid-template-columns: auto !important;
+		}
+		.table .text-container {
+			margin: 10px 50px;
+			display: block;
+		}
+		.table .image-container img {
+			width: 280px !important;
+		}
+		.beyond-CV .content-box {
+			margin: 0 !important;
+		}
+		.beyond-eye-level {
+			margin: 0 !important;
+			text-align: center;
+		}
+		.beyond-eye-level .content-box {
+			-ms-grid-template-columns: auto !important;
+			grid-template-columns: auto !important;
+			margin: 1rem 3rem 3rem 3rem !important;
+		}
+		footer .contact {
+			margin-left: 5px !important;
+		}
+	}
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: 9999;
+	}
+	.modal-content {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+	}
+	#caption {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #ccc;
+		padding: 10px 0;
+		height: 150px;
+	}
+	.modal-content,
+	#caption {
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+	@-webkit-keyframes zoom {
+		from {
+			-webkit-transform: scale(0)
+		}
+		to {
+			-webkit-transform: scale(1)
+		}
+	}
+	@keyframes zoom {
+		from {
+			transform: scale(0)
+		}
+		to {
+			transform: scale(1)
+		}
+	}
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	@media only screen and (max-width: 700px) {
+		.modal-content {
+			width: 95%;
+			margin-top: 15%;
+		}
+	}
+	.max_width {
+		max-width: 1400px;
+		margin: 0 auto
+	}
+	
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .image-container{
+                float : left;
+        }
+        .content-box .table{
+            clear:both;
+            padding-top :30px;
+        }
+        
+        .flex{
+            float : left;
+            width:23%;
+        }
+        footer{
+            clear:both;
+        }
+        .beyond-eye-level .content-box .flex{
+            margin:1%;
+        }
+    }
+	</style>
+	
+	
 </head>
 
 <body>
@@ -183,13 +373,18 @@
         </div>
         <div class="navigation">
             <nav>
+			<button class="menu_btn"><i class="fas fa-bars"></i></button>
+			<div class="toggel">
                 <ul class="desktop">
+					
                     <li><a href="#about">About</a></li>
                     <li><a href="#beyond-CV">Beyond CV</a></li>
                     <li><a href="#beyond-eye-level">Beyond Eye Level</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+			</div>
             </nav>
+            <!--
             <nav>
                 <ul class="mobile">
                     <li><a href="#"><i class=""></i> </a></li>
@@ -198,13 +393,15 @@
                     <li><a href="#"><i class=""></i> </a></li>
                 </ul>
             </nav>
+            -->
         </div>
     </header>
     
     <div class="main">
         <!-- Banner -->
+
         <div class="banner" id="banner">
-            <video autoplay muted loop preload="auto" width="100%" height="100%">
+            <video autoplay loop muted playsinline  width = "100%" height = "100%" class="bg_video">
             <source src="resources/diving_compressed_muted.mp4">
                 Your broswer does not support the video tag.
             </video> 
@@ -222,7 +419,8 @@
                 <span>98ft | Green Island, Taiwan | April 27, 2019</span>
             </div>
         </div>
-        
+
+        <div class="max_width">
         <div class="main-content">
             <!-- About -->
             <div class="about" id="about">
@@ -244,12 +442,13 @@
                     </div>
                 </div>
             </div>
+        
 
             <!-- Beyond My CV -->
             <div class="beyond-CV" id="beyond-CV">
                 <span class="section">BEYOND RÉSUMÉ</span>
                 <div class="content-box">
-                    <div class="table">
+                    <div class="table" >
                         <div class="image-container">
                             <img src="resources/Intro.png" width="100%" alt="Career Goal">
                         </div>
@@ -259,13 +458,13 @@
                                 I like to learn, and I am excited to <span>learn more</span>.</br>
                                 I aim to reach <span>beyond yesterday</span>.</br>
                                 I aim to bring <span>positive influences</span> to others.</br>
-                                I look forward to working with people who are <span>bigger</span> and <span>smarter</span> than myself - <span>Is this you?</span>
+                                I admire people who are <span>bigger</span> and <span>smarter</span> than myself - <span>Is this you?</span>
                             </h5>
                         </div>
                     </div>
                     <div class="table">
                         <div class="image-container">
-                            <img id="meyes" src="resources/MX.JPG" width="100%" alt="Me Yes Sales and Marketing">
+                            <img id="meyes" src="resources/MX.JPG" width="100%" alt="Me Yes Sales and Marketing" style="margin:0px !important">
                         </div>
                         <div class="text-container">
                             <h4>
@@ -368,52 +567,53 @@
                     </div>
                 </div>
             </div>
-        
+        </div>
+		
 
-            <!-- Beyond Eye Level -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>       
+
+		<!-- Beyond Eye Level -->
             <div class="beyond-eye-level" id="beyond-eye-level">
                 <span class="section">BEYOND EYE LEVEL</span>
                 <div class="content-box">
                     <div class="flex">
-                        <img src="resources/beyond1.JPG" width="100%" alt="">
+                        <img src="resources/beyond1.JPG" width="100%" class="myImg" alt="">
                     </div>
                     <div class="flex">
-                        <img src="resources/beyondp4.png" width="100%" alt="">
+                        <img src="resources/beyondp4.png" width="100%" class="myImg" alt="">
                     </div>
                     <div class="flex">
-                        <img src="resources/beyondp3.JPG" width="100%" alt="">
+                        <img src="resources/beyondp3.JPG" width="100%" class="myImg" alt="">
                     </div>
                     <div class="flex">
-                        <img src="resources/beyondp7.JPG" width="100%" alt="">
+                        <img src="resources/beyondp7.JPG" width="100%" class="myImg" alt="">
                     </div>
                     <div class="flex">
-                        <video autoplay muted loop preload="auto" width="100%" height="100%" src="resources/video 2.MP4">
+                        <video autoplay loop muted playsinline width="100%" height="100%" src="resources/video 2.MP4">
                         Your browser doesn't support the video tag.
                         </video>
                     </div>
                     <div class="flex">
-                        <img src="resources/beyondp15.JPG" width="100%" alt="">
-                    </div>
-                    <!--
-                    <div class="flex">
-                        <video autoplay muted loop preload="auto" width="100%" height="100%" src="resources/diving2_muted_compressed.mp4">
-                        Your browser doesn't support the video tag.
-                        </video>
-                    </div>    
-                    -->
-                    <div class="flex">
-                        <img src="resources/beyondp13.JPG" width="100%" alt="">
+                        <img src="resources/beyondp15.JPG" width="100%" class="myImg" alt="">
                     </div>
                     <div class="flex">
-                        <img src="resources/beyondp11.JPG" width="100%" alt="">
+                        <img src="resources/beyondp13.JPG" width="100%" class="myImg" alt="">
                     </div>
                     <div class="flex">
-                        <img src="resources/beyondp14.png" width="100%" alt="">
+                        <img src="resources/beyondp11.JPG" width="100%" class="myImg" alt="">
+                    </div>
+                    <div class="flex">
+                        <img src="resources/beyondp14.png" width="100%" class="myImg" alt="">
                     </div>
                 </div>
             </div>
 
     </div>
+</div>
 
 <footer>
     <div class="contact" id="contact">
@@ -421,8 +621,7 @@
         <h5>wanting.su@outlook.com</h5>
         <div class="icon">
             <a href="https://www.linkedin.com/in/wanting-su/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/wanting.suc/"><i class="fab fa-facebook-square"></i></a>
-            
+            <a href="https://www.facebook.com/wanting.suc/"><i class="fab fa-facebook-square"></i></a> 
         </div>
     </div>
 
@@ -430,7 +629,28 @@
         Copyright © 2020 TAKEYOUBEYOND.NET All Rights Reserved | Photography by Wanting Su
     </span>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<script>
+
+$(".menu_btn").click(function(){
+    $(".toggel").toggleClass('active');
+
+});
+
+$(".myImg").click(function(){
+	$("#myModal").show();
+	$("#img01").attr("src",this.src);
+});
+
+$(".close").click(function(){
+	$("#myModal").hide();
+});
+
+</script>
+
+
 </body>
     
 </html>
-
